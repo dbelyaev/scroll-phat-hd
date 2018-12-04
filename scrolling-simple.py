@@ -16,9 +16,6 @@ Press Ctrl+C to exit.
 # using in Pimoroni Scroll Bot, need to rotate in order to fix upside down
 scrollphathd.rotate(degrees=180)
 
-while True:
-  scroll_message("HELLO")
-
 def scroll_message(message):
     scrollphathd.clear() # Clear the display and reset scrolling to (0, 0)
     length = scrollphathd.write_string(message) # Write out your message
@@ -36,4 +33,5 @@ def scroll_message(message):
 
     time.sleep(0.5) # Delay at the end of scrolling
 
-scroll_message("Hello World! How are you today?")
+while True:
+  scroll_message("HELLO")
